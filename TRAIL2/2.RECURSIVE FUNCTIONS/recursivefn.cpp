@@ -1,4 +1,4 @@
-Recursive Functions
+/*Recursive Functions
 Can we consider a problem where we print 5 stars over n lines as follows?
 
 
@@ -69,6 +69,7 @@ Therefore, the function retreats to the place where
 it was called the moment it returns, and the function 
 that retreated continues from its previous state. 
 It is essential to understand this process well.
+*/
 //my code:
 #include <iostream>
 
