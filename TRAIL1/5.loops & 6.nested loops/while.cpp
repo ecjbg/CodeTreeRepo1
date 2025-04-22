@@ -235,3 +235,32 @@ int main() {
 }
 
 
+3. 
+#include <iostream>
+using namespace std;
+bool digit369(int i)
+{
+    while (i > 0) {
+        int digit = i % 10;
+        if (digit == 3 || digit == 6 || digit == 9) return true;
+        i /= 10;
+    }
+    return false;
+}
+int main() {
+    // Please write your code here.
+    int n;
+    cin>>n;
+    for(int i=1;i<=n;i++){
+    if(i%3==0 || digit369(i))
+    {
+       cout<<"0"<<" ";
+    }
+    else
+    {
+        cout<<i<<" ";
+    }
+    }
+    return 0;
+}
+//369 game.
