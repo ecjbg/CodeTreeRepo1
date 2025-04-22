@@ -64,3 +64,89 @@ Output
 60
 
 */
+/*
+Inputting Three or More Values Separated by a Specific Character
+The following code demonstrates how to input three numbers separated by the - character 
+and then output them. Since the - character does not need to be stored for use, it can be 
+stored in a single character variable.
+
+C++ Code
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int a, b, c;
+    char d;
+
+    cin >> a >> d >> b >> d >> c;
+    cout << a << endl << b << endl << c;
+
+    return 0;
+
+}
+Output
+>> 50-60-70
+
+50
+60
+70
+Similarly, you can use cin.get() to achieve the same result.
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int a, b, c;
+    char d;
+
+    cin >> a;
+    cin.get();
+    cin >> b;
+    cin.get();
+    cin >> c;
+    cout << a << endl << b << endl << c;
+
+    return 0;
+
+}
+
+*/
+//mm-dd-yyyy to yyyy.mm.dd
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Please write your code here.
+    int a,b,c;
+    char d,j;
+    cin>>a>>d>>b>>j>>c;
+    cout<<c<<"."<<a<<"."<<b;
+    return 0;
+}
+//9-889 to 9899
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Please write your code here.
+    int a,b;
+    char d;
+    cin>>a>>d>>b;
+    cout<<a<<b;
+    return 0;
+}
+//010-4773-3799 to 010-3799-4773
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    string a, b, c;
+    getline(cin, a, '-');
+    getline(cin, b, '-');
+    getline(cin, c);
+
+    cout << a << "-" << b << "-" << c;
+    return 0;
+}
