@@ -116,3 +116,55 @@ int main() {
     return 0;
 }
 ///////////////////////////////////////////////////////////////////
+#include <iostream>
+using namespace std;
+
+int main() {
+
+	for (int i = 0; i <= 2; i++) {
+		for (int j = 0; j <= 2 - i; j++) {
+			cout << "*";
+		}
+		cout << endl;
+	}
+
+	for (int i = 1; i >= 0; i--) {
+		for (int j = 0; j <= 2 - i; j++) {
+			cout << "*";
+		}
+		cout << endl;
+	}
+
+	return 0;
+
+}
+***
+**
+*
+**
+***
+#include <iostream>
+using namespace std;
+
+int main() {
+
+	int cnt = 3;
+	for (int i = 0; i < 5; i++) {
+		for (int j = 0; j < cnt; j++) {
+			cout << "*";
+		}
+		cout << endl;
+
+		if (i < 2) {
+			cnt--;
+		}
+		else {
+			cnt++;
+		}
+	}
+
+	return 0;
+
+}
+
+/////////////////////////////////////////////////////////////////////////////////
