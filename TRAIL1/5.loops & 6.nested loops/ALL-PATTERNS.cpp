@@ -265,3 +265,136 @@ int main() {
     return 0;
 }
 ////////////////////////////////////////////////////////////////////////
+#include <iostream>
+using namespace std;
+
+int main() {
+
+	for (int i = 0; i < 3; i++) {
+		for (int j = 0; j < 2 - i; j++) {
+			cout << " ";
+		}
+		for (int j = 0; j < 2 * i + 1; j++) {
+			cout << "*";
+		}
+		cout << endl;
+	}
+
+	return 0;
+
+}
+prints :
+  *
+ ***
+*****
+////////////////////////////////////////////////////////
+#include <iostream>
+using namespace std;
+
+void printReversePyramid(int n) {
+    int stars = 2 * n - 1; 
+
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < i; j++) {
+            cout << "  ";
+        }
+        for (int j = 0; j < stars - 2 * i; j++) {
+            cout << "* ";
+        }
+        cout << endl;
+    }
+}
+
+int main() {
+    int n;
+    cin>>n;
+    printReversePyramid(n);
+    return 0;
+}
+////////////////////////////////////////////////////////////////////////////////
+#include <iostream>
+using namespace std;
+
+void printCenteredPyramid(int n) {
+    int totalStars;
+
+    for (int i = 0; i < n; i++) {
+        totalStars = 2 * i + 1;
+
+        // Print leading spaces
+        for (int j = 0; j < n - i - 1; j++) {
+            cout << "  ";
+        }
+
+        // Print stars
+        for (int j = 0; j < totalStars; j++) {
+            cout << "* ";
+        }
+
+        cout << endl;
+    }
+}
+
+int main() {
+    int n;
+    cin>>n;
+    printCenteredPyramid(n);
+    return 0;
+}
+//////////////////////////////////////////////////////////////
+#include <iostream>
+using namespace std;
+
+void printHollowInvertedTriangle(int n) {
+    for (int i = 0; i < n; i++) {
+        // Left stars
+        for (int j = 0; j < n - i; j++) {
+            cout << "*";
+        }
+
+        // Middle spaces
+        for (int j = 0; j < 2 * i; j++) {
+            cout << " ";
+        }
+
+        // Right stars
+        for (int j = 0; j < n - i; j++) {
+            cout << "*";
+        }
+
+        cout << endl;
+    }
+}
+
+int main() {
+    int n;
+    cin>>n;
+    printHollowInvertedTriangle(n);
+    return 0;
+}
+prints :
+******
+**  **
+*    *
+
+//////////////////////////////////////////////////////////////////////
+#include <iostream>
+using namespace std;
+
+int main() {
+
+	for (int i = 0; i < 3; i++) {
+		for (int j = 0; j < 3 * i + 1; j++) {
+			cout << "*";
+		}
+		cout << endl;
+	}
+
+	return 0;
+
+}
+prints :
+*
+****
+*******
+//////////////////////////////////////////////////////////////////////////////////
