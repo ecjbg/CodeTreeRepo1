@@ -512,3 +512,21 @@ int main() {
 */
 
 15.
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+
+	string s = "baaana";
+	int len = s.length();
+	s = s.substr(len - 1, 1) + s.substr(0, len - 1);
+	cout << s;
+
+	return 0;
+
+}
+
+>> abaaan
+
+16.
